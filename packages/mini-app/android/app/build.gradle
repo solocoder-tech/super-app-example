@@ -28,6 +28,7 @@ react {
     //
     //   The command to run when bundling. By default is 'bundle'
     // bundleCommand = "ram-bundle"
+    bundleCommand = "webpackc-bundle"
     //
     //   The path to the CLI configuration file. Default is empty.
     // bundleConfig = file(../rn-cli.config.js)

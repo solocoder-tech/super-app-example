@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet} from 'react-native';
+import { StyleSheet } from 'react-native';
 import {
   createNativeStackNavigator,
   NativeStackNavigationProp,
@@ -7,10 +7,12 @@ import {
 
 import HomeScreen from '../screens/HomeScreen';
 import DetailScreen from '../screens/DetailScreen';
+import MiniScreen from '../screens/MiniScreen';
 
 export type MainStackParamList = {
   Home: undefined;
   Detail: undefined;
+  MiniApp: undefined;
 };
 
 export type MainStackNavigationProp =
@@ -30,6 +32,7 @@ const MainNavigator = () => {
       }}>
       <Main.Screen name="Home" component={HomeScreen} />
       <Main.Screen name="Detail" component={DetailScreen} />
+      <Main.Screen name="MiniApp" component={MiniScreen} />
     </Main.Navigator>
   );
 };
